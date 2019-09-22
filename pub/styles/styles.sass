@@ -1,0 +1,57 @@
+$white: #ffffff
+$black: #000000
+$orange: #eb6a16
+$light-blue: #1e9bd7
+
+$contentBox: 100%
+$containerBox: 1525px
+
+$tablet: 768px
+$small-screen: 1024px
+$medium-screen: 1280px
+$highres-screen: $containerBox
+
+@font-face
+    font-family: KlavikaWebBasicLight
+    src: url(../../fonts/KlavikaWebBasicLight.woff)
+
+@font-face
+    font-family: KlavikaWebBasicBold
+    src: url(../../fonts/KlavikaWebBasicBold.woff)
+
+body 
+    margin: 0
+    padding: 0
+    color: $black
+    font-size: 16px
+    background-color: $white
+    font-family: KlavikaWebBasicLight
+
+.wrapper 
+    width: $contentBox
+    height: 100vh
+    display: flex
+    flex-direction: column
+    margin: 0 auto
+    padding: 0
+
+.container 
+    width: $contentBox
+    overflow: hidden
+    display: block
+    margin: 0 auto
+    padding: 0
+
+    @media screen and (min-width: 678px)
+        width: $containerBox
+
+.header 
+    width: $contentBox
+    height: 350px
+    display: block
+    padding: 0
+    margin: 0
+
+.main-content 
+    width: $contentBox
+    flex: 1
