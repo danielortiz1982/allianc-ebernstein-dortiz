@@ -23,14 +23,25 @@ body
     margin: 0 auto
     padding: 0
 
+.button
+    padding: .5em
+    display: inline-block
+    background-color: rgba($white, 0)
+    border: solid 1px $white
+    color: $white
+    text-decoration: none
+    
+    &:hover
+        background-color: rgba($white, 0)
+
 .container 
     width: $contentBox
     overflow: hidden
     display: block
     margin: 0 auto
 
-    @media screen and (min-width: 678px)
-        width: $containerBox
+    @media screen and (min-width: $small-screen)
+        width: $tablet
 
     @media screen and (min-width: $medium-screen)
         width: $small-screen
@@ -39,8 +50,14 @@ body
     width: $contentBox
     height: 450px
     display: block
-    padding: 0
+    padding: 1em 0
     margin: 0
+
+    @media screen and (min-width: $tablet)
+        padding: 3em 0
+
+    @media screen and (min-width: $small-screen)
+        padding: 12em 0
 
 .hero 
     background-image: url(../../images/background-img.png)
@@ -55,29 +72,52 @@ body
     gap: 1.2em
 
     @media screen and (min-width: $small-screen)
-        padding-top: 8em
         grid-template-columns: 50% 50%
         gap: 0
+        justify-items: center
         
 
 .card-item 
-    width: 450px
+    width: 325px
     margin: 0 auto
     color: $white
-    padding: 10px
+    padding: 20px
+    font-size: 16px
     display: block
     background-color: rgba($light-blue, .8)
+
+    @media screen and (min-width: $medium-screen)
+        width: 450px
+
+    h4 
+        margin: 3px 0
+
+    p 
+        margin: 0 0 20px 0
+        padding: 0
 
 .main-content 
     width: $contentBox
     flex: 1
 
 .content-box
-    padding: 0 20px
+    padding: 30px 25px
+    border: 0
+
+    &:last-child 
+        border-top: solid 1px $black
+        margin-top: 1.2em
+
+    .button 
+        background-color: rgba($white, 0)
+        border: solid 1px $light-blue
+        color: $light-blue
+
 
 .social-icons 
     width: 75%
     margin: 0 auto
+    padding: 45px
     display: flex
     flex-wrap: nowrap
     align-items: center

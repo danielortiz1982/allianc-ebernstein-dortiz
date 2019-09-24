@@ -9,31 +9,41 @@
 h1 {
   font-size: 32px;
   font-weight: bold;
+  margin: 20px 0;
+  font-family: KlavikaWebBasicBold;
 }
 
 h2 {
   font-size: 28px;
   font-weight: bold;
+  margin: 20px 0;
+  font-family: KlavikaWebBasicBold;
 }
 
 h3 {
   font-size: 24px;
   font-weight: bold;
+  margin: 10px 0;
+  font-family: KlavikaWebBasicBold;
 }
 
 h4 {
   font-size: 20px;
   font-weight: normal;
+  margin: 5px 0;
+  font-family: KlavikaWebBasicBold;
 }
 
 h5 {
   font-size: 18px;
   font-weight: normal;
+  font-family: KlavikaWebBasicBold;
 }
 
 h6 {
   font-size: 16px;
   font-weight: normal;
+  font-family: KlavikaWebBasicBold;
 }
 
 body {
@@ -54,15 +64,27 @@ body {
   padding: 0;
 }
 
+.button {
+  padding: 0.5em;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0);
+  border: solid 1px #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+
 .container {
   width: 100%;
   overflow: hidden;
   display: block;
   margin: 0 auto;
 }
-@media screen and (min-width: 678px) {
+@media screen and (min-width: 1024px) {
   .container {
-    width: 1525px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -75,8 +97,18 @@ body {
   width: 100%;
   height: 450px;
   display: block;
-  padding: 0;
+  padding: 1em 0;
   margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 3em 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 12em 0;
+  }
 }
 
 .hero {
@@ -94,19 +126,32 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .hero-content {
-    padding-top: 8em;
     grid-template-columns: 50% 50%;
     gap: 0;
+    justify-items: center;
   }
 }
 
 .card-item {
-  width: 450px;
+  width: 325px;
   margin: 0 auto;
   color: #ffffff;
-  padding: 10px;
+  padding: 20px;
+  font-size: 16px;
   display: block;
   background-color: rgba(30, 155, 215, 0.8);
+}
+@media screen and (min-width: 1280px) {
+  .card-item {
+    width: 450px;
+  }
+}
+.card-item h4 {
+  margin: 3px 0;
+}
+.card-item p {
+  margin: 0 0 20px 0;
+  padding: 0;
 }
 
 .main-content {
@@ -115,12 +160,23 @@ body {
 }
 
 .content-box {
-  padding: 0 20px;
+  padding: 30px 25px;
+  border: 0;
+}
+.content-box:last-child {
+  border-top: solid 1px #000000;
+  margin-top: 1.2em;
+}
+.content-box .button {
+  background-color: rgba(255, 255, 255, 0);
+  border: solid 1px #1e9bd7;
+  color: #1e9bd7;
 }
 
 .social-icons {
   width: 75%;
   margin: 0 auto;
+  padding: 45px;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
