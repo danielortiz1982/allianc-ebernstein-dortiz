@@ -143,4 +143,11 @@ body
 
     .menu-item 
         padding: 0 15px
+        display: none
+
+        &:first-child
+            display: inline-block
+
+        @media screen and (min-width: $small-screen)
+            display: block
         
