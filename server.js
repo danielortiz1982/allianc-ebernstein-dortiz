@@ -3,7 +3,7 @@ const chalk           = require('chalk')
 const path            = require('path')
 const server          = express()
 const PORT            = process.env.port || 5000
-const ServerMessage   = `Branding Verticals is running on localhost:${PORT}`
+const ServerMessage   = `Allianc Ebernstein is running on localhost:${PORT}`
 const pub             = path.join(__dirname, '/pub/')
 
 server.use(express.static(pub))
