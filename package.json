@@ -21,6 +21,6 @@
     "express": "^4.17.1",
     "sass": "^1.22.12",
     "webpack": "^4.40.2",
-    "webpack-cli": "^3.3.9"
+    "webpack-cli": "^3.3.12"
   }
 }
